@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'mixins';
+@import 'content';
+
+body {
+    background: linear-gradient(90deg, #72FFB6, #10D164);
+    margin:0;
+    font-family:$fonts;
+}
+
+a {
+    text-decoration: none;
+    cursor:pointer;
+}
+
+h1, h2, h3, h4, h5, h6,  div, span, p {
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+button {
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+button:hover {
+    @include hover;
+}
+
+progress[value] {
+   appearance: none;
+   -webkit-appearance: none;
+}  
+  
+
+progress[value]::-webkit-progress-bar {
+    background-color:$medium;
+  }
+
+progress[value]::-webkit-progress-value {
+    background-color:$dark;
+}
+

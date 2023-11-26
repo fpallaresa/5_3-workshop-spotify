@@ -1,0 +1,10 @@
+@mixin flexible {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin hover {
+    transition: 300ms;
+    opacity: 0.7;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./icon-fonts/style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <section class="card">
+        <img class ="card__logo" src="./assets/logo.png">
+        <div class="card__container">
+            <img class ="card__img" src="">
+            <div class="card__performer">
+                <div class="card__info">
+                    <h1 class="card__title"></h1>
+                    <p class="card__author"></p>
+                </div>
+                <div class="card__player">
+                    <div class="card__counters">
+                        <span class="card__counter--start"></span>
+                        <span class="card__counter--end"></span> 
+                    </div>
+                    <progress class="card__progressbar" max="100" value="0"></progress>
+                    <div class="card__options">
+                        <button class="card__random"><span class="icon-shuffle"></span></button>
+                        <button class="card__bucle"><span class="icon-arrow-rotate"></span></button>
+                    </div>        
+                </div>
+                <div class="card__buttons">
+                    <button class="card__previous"><span class="icon-backward-step"></button></button>
+                    <button class="card__play icon-play"></button>
+                    <button class="card__next"><span class="icon-forward-step"></span></button>
+                </div>
+            </div>   
+        </div>
+    </section>
+</body>
+</html>

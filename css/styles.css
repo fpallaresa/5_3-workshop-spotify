@@ -1,0 +1,168 @@
+.card {
+  max-width: 400px;
+  padding: 30px 10%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.card__logo {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.card__container {
+  background-color: white;
+  color: black;
+  max-width: 400px;
+  margin-top: 40px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.card__img {
+  max-width: 100%;
+}
+.card__performer {
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+.card__title {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+.card__author {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.card__player {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 80px;
+}
+.card__counters {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.card__progressbar {
+  width: 100%;
+  height: 15px;
+  background-color: lightgray;
+  margin-bottom: 5px;
+}
+.card__options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.card__random {
+  font-size: 1rem;
+  color: lightgray;
+}
+.card__random--active {
+  color: black;
+}
+.card__bucle {
+  font-size: 1rem;
+  color: lightgray;
+}
+.card__bucle--active {
+  color: black;
+}
+.card__buttons {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  margin: 0px 25%;
+}
+.card__previous {
+  font-size: 1.8rem;
+  margin: 0px 1%;
+}
+.card__play {
+  font-size: 2rem;
+  margin: 0px 1%;
+}
+.card__play--disabled {
+  display: none;
+}
+.card__pause {
+  font-size: 2rem;
+  margin: 0px 1%;
+}
+.card__pause--disabled {
+  display: none;
+}
+.card__next {
+  font-size: 1.8rem;
+  margin: 0px 1%;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 700px;
+    padding: 50px 10%;
+  }
+  .card__logo {
+    width: 40%;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+  .card__container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+  }
+  .card__img {
+    max-width: 40%;
+  }
+  .card__performer {
+    width: 60%;
+  }
+}
+body {
+  background: linear-gradient(90deg, #72FFB6, #10D164);
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, div, span, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 300ms;
+  opacity: 0.7;
+}
+
+progress[value] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: lightgray;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: black;
+}/*# sourceMappingURL=styles.css.map */
